@@ -19,60 +19,62 @@
        <h1> Current Train Schedule </h1>
    </div>
    <div class="container">
-       <div class="row">
-           <H5>Current Train</H5>
-           <table class="table table-striped">
-               <thead class="thead-inverse">
-                   <tr>
-                       <th scope="col">Train Name</th>
-                       <th scope="col">Destination</th>
-                       <th scope="col">Frequency</th>
-                       <th scope="col">Next Arrival</th>
-                       <th scope="col">Minutes Away</th>
-                       
-                   </tr>
-               </thead>
-               <tbody class="tbodyData" id="employee-table">
-                   <tr>
-                       <td>TEST</td>
-                       <td>TEST</td>
-                       <td>TEST</td>
-                       <td>TEST</td>
-                       <td>TEST</td>
-            
-                   </tr>
-               </tbody>
-           </table>
+       <div class="card">
+           <div class="card-body">
+                <div class="row">
+                        <H5>Current Train</H5>
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody class="tbodyData" id="train-table">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+           </div>    
        </div>
        
        <br>
-       <div class="row">
-           <H5>Add Train</H5>
-       </div>
-       <div class="row">
-           <br>
-           <br>
-           <div class="form-row">
-               <div class="form-group col-md-3">
-                   <label for="eName">Train Name</label>
-                   <input type="text" class="form-control" id="eName" placeholder="Silverpilen">
-               </div>
-               <div class="form-group col-md-3">
-                   <label for="role">Destination</label>
-                   <input type="text" class="form-control" id="role" placeholder="Stockholm">
-               </div>
-               <div class="form-group col-md-3">
-                   <label for="startdate">First Train Time (HH:mm-military time)</label>
-                   <input type="number" class="form-control" id="startdate" placeholder="00:15">
-               </div>
-               <div class="form-group col-md-3">
-                       <label for="monthlyrate">Frequency (min)</label>
-                       <input type="number" class="form-control" id="monthlyrate" placeholder="13">
-                   </div>
+       
+       <div class="card">
+           <div class="card-body">
+                <div class="row">
+                        <H5>Add Train</H5>
+                    </div>
+                <div class="row">
+                        <br>
+                        <br>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="trainname">Train Name</label>
+                                <input type="text" class="form-control" id="trainname" placeholder="Silverpilen">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination" placeholder="Stockholm">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="firsttraintime">First Train Time (HHmm-military time)</label>
+                                <input type="number" class="form-control" id="firsttraintime" placeholder="00:15">
+                            </div>
+                            <div class="form-group col-md-3">
+                                    <label for="frequency">Frequency (min)</label>
+                                    <input type="number" class="form-control" id="frequency" placeholder="13">
+                                </div>
+                        </div>
+                    </div>
            </div>
        </div>
        <div class="row">
-<button type="submit" id="empsubmit" class="btn btn-primary my-1">Submit</button>
+<button type="submit" id="trainsubmit" class="btn btn-primary my-1">Submit</button>
        </div>
    </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
